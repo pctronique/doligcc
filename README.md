@@ -1,6 +1,6 @@
 # dgcc (Docker GCC)
 
-La base docker pour un projet en assembleurC ou C++. Vous pouvez utiliser cmake.
+La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake.
 
 <details>
   <summary>Table des matières</summary>
