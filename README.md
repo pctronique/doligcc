@@ -10,6 +10,7 @@ La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake
         <ul>
             <li><a href="#le-fichier-env">Le fichier .env</a></li>
             <li><a href="#installer-le-conteneur">Installer le conteneur</a></li>
+            <li><a href="#modifier-les-versions">Modifier les versions</a></li>
         </ul>
     </li>
     <li><a href="#rechercher-un-package-docker">Rechercher un package (Docker)</a></li>
@@ -42,6 +43,17 @@ NAME_GCC_CONTAINER=nameProject_gcc
 Vous pouvez créer votre conteneur.
 ```
 $ ./install.sh
+```
+
+### Modifier les versions
+Sur le projet actuel, on utilise les nouvelles versions ce qui peut poser des problèmes sur le projet par la suite. Il est préférable d'utiliser la version utilisée lors de la création du projet.
+```
+$ ./bin/terminal.sh
+# gcc -v
+```
+Dand le fichier "**.docker/linux_agcc/Dockerfile**", remplacé '**latest**' par la bonne version disponible pour docker :
+```
+FROM gcc:latest
 ```
 
 ## Rechercher un package (Docker)
