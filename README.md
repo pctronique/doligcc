@@ -52,13 +52,18 @@ $ ./install.sh
 
 ### Modifier les versions
 Sur le projet actuel, on utilise les nouvelles versions ce qui peut poser des problèmes sur le projet par la suite. Il est préférable d'utiliser la version utilisée lors de la création du projet.
+[docker gcc](https://hub.docker.com/_/gcc)
 ```
 $ ./bin/terminal.sh
 # gcc -v
+gcc version 13.2.0 (GCC) 
 ```
 Dand le fichier "**.docker/linux_agcc/Dockerfile**", remplacé '**latest**' par la bonne version disponible pour docker :
 ```
 FROM gcc:latest
+```
+```
+FROM gcc:13.2.0
 ```
 
 ## Rechercher un package (Docker)
