@@ -52,7 +52,7 @@ $ ./install.sh
 
 ### Modifier les versions
 Sur le projet actuel, on utilise les nouvelles versions ce qui peut poser des problèmes sur le projet par la suite. Il est préférable d'utiliser la version utilisée lors de la création du projet.
-[docker gcc](https://hub.docker.com/_/gcc)
+<br />[docker gcc](https://hub.docker.com/_/gcc)
 ```
 $ ./bin/terminal.sh
 # gcc -v
