@@ -51,8 +51,6 @@ $ ./install.sh
 ```
 
 ### Modifier les versions
-<br />
-
 > [!WARNING]
 > Il est indispensable de le faire pour pouvoir utiliser un conteneur identique des années plus tard.
 
