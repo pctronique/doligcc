@@ -27,8 +27,8 @@ La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake
 </details>
     
 ## Installé à la base du projet docker
-* gcc
-* cmake
+* [docker gcc](https://hub.docker.com/_/gcc)
+* cmake (docker gcc)
 
 ## Création du conteneur (Docker)
 Vous devez avoir installé Docker.
@@ -65,6 +65,11 @@ FROM gcc:latest
 ```
 FROM gcc:13.2.0
 ```
+<br />
+
+> [!WARNING]
+> Il est indispensable de le faire pour pouvoir utiliser un conteneur identique des années plus tard.
+
 
 ## Rechercher un package (Docker)
 Si vous avez besoin d'un package pour votre projet dans le conteneur. Vous pouvez rechercher les packages disponibles pour le conteneur.
