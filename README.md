@@ -5,6 +5,7 @@ La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake
 <details>
   <summary>Table des matières</summary>
   <ol>
+    <li><a href="#installé-à-la-base-du-projet-docker">Installé à la base du projet docker</a></li>
     <li>
         <a href="#création-du-conteneur-docker">Création du conteneur (Docker)</a>
         <ul>
@@ -24,6 +25,10 @@ La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake
     <li><a href="#le-dossier-du-projet">Le dossier du projet</a></li>
   </ol>
 </details>
+    
+## Installé à la base du projet docker
+* gcc
+* cmake
 
 ## Création du conteneur (Docker)
 Vous devez avoir installé Docker.
