@@ -1,11 +1,16 @@
 # dgcc (Docker GCC)
 
-La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake.
-
 <details>
   <summary>Table des matières</summary>
   <ol>
-    <li><a href="#installé-à-la-base-du-projet-docker">Installé à la base du projet docker</a></li>
+    <li>
+        <a href="#présentation">Présentation</a>
+        <ul>
+            <li><a href="#l-avantage-d-utiliser-docker">L'avantage d'utiliser docker</a></li>
+            <li><a href="#conteneur-gcc">Conteneur gcc</a></li>
+            <li><a href="#autres-conteneurs">Autres conteneurs</a></li>
+        </ul>
+    </li>
     <li>
         <a href="#création-du-conteneur-docker">Création du conteneur (Docker)</a>
         <ul>
@@ -25,10 +30,31 @@ La base docker pour un projet en assembleur C ou C++. Vous pouvez utiliser cmake
     <li><a href="#le-dossier-du-projet">Le dossier du projet</a></li>
   </ol>
 </details>
-    
-## Installé à la base du projet docker
-* [docker gcc](https://hub.docker.com/_/gcc)
-* cmake (docker gcc)
+
+## Présentation
+La base docker pour un projet en assembleur C ou C++. Ceci est une base, vous pouvez le modifier selon vos besoins.<br />
+> [!WARNING]
+> Vous devez installer docker pour pouvoir l'utiliser.
+
+### L'avantage d'utiliser docker
+Lorsque vos faites un projet avec docker vous devez transmettre la totalité du projet, les fichiers de création des conteneurs et le code. Pour ce projet, vous devez transmettre le contenu en totalité du dossier "**dgcc**" (**que vous pouvez et surtout devez le renommer au nom de votre projet**) dans un git.<br />
+Les avantages :<br />
+* Pas de programme à installer sur votre pc (à part docker et un éditeur ou IDE)
+* Travailler à plusieurs avec les mêmes conteneurs à l'identique
+* Prêt à travailler directement sur le code après la création des conteneurs
+<br /> Après installation des conteneurs, on peut directement continuer le code.
+
+### Conteneur gcc
+Il est conçu à partir de l'image du [docker gcc](https://hub.docker.com/_/gcc).<br />
+Il contiendra vos codes.<br />
+Il installe aussi dans le conteneur :<br />
+* [cmake](https://cmake.org/)
+
+<br /> 
+C'est dans ce conteneur que vous allez placer vos codes c ou c++, dans le dossier "**project**" (qui est lié au conteneur).
+
+### Autres conteneurs
+Vous pouvez installer d'autres conteneurs, comme par exemple le conteneur pour une SGBD. Ici, je donne seulement la base du code.
 
 ## Création du conteneur (Docker)
 Vous devez avoir installé Docker.
