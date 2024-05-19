@@ -1,15 +1,14 @@
-# Adopt version 2 syntax:
-#   https://docs.docker.com/compose/compose-file/#/versioning
-version: '3'
-
 services:
 ###########################
 # Setup the PHP container
 ###########################
     linux_gcc:
-        container_name: ${NAME_GCC_CONTAINER}
+        container_name: ${NAME_PROJECT}_gcc
         restart: always
-        build: .docker/linux_gcc
+        build: 
+            context: ./.docker/images/linux_gcc/
+            args:
+                - VALUE_GCC_VERSION=${VALUE_GCC_VERSION}
         tty: true
         stdin_open: true
         volumes:
