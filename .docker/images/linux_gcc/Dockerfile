@@ -43,7 +43,7 @@ COPY startautobash /etc/init.d/
 RUN chmod +x /etc/init.d/startautobash
 RUN update-rc.d startautobash defaults
 
-WORKDIR ${PHP_FOLDER_GCC_FOLDER_PROJECTPROJECT}
+WORKDIR ${GCC_FOLDER_PROJECT}
 
 ENTRYPOINT ["docker-autobash-entrypoint.sh"]
 
