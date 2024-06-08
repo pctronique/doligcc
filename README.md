@@ -1,4 +1,4 @@
-# dgcc (Docker GCC)
+# dgcc : Docker GCC
 
 <details>
   <summary>Table des matières</summary>

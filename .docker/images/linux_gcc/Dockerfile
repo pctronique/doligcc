@@ -6,6 +6,7 @@ FROM gcc:${DEF_GCC_VERSION}
 ARG GCC_FOLDER_PROJECT
 ENV GCC_FOLDER_PROJECT=${GCC_FOLDER_PROJECT:-"/home/project/"}
 ENV GCC_FOLDER_LOG="/var/log/docker/gcc/"
+ENV GCC_FOLDER_COMP_LOG="/var/log/docker/compile/"
 ENV GCC_FOLDER_TMP="/var/tmp/docker/gcc/"
 ENV GCC_FOLDER_INIT="/var/docker/gcc/"
 ENV GCC_FOLDER_INIT_DATA="/docker-entrypoint-initdata.d/"

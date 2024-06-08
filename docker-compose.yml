@@ -13,3 +13,4 @@ services:
         stdin_open: true
         volumes:
             - ./project:/home/project:rw
+            - ./.dockertmp/log/gcc/:/var/log/docker/gcc/:rw
