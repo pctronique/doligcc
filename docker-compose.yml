@@ -13,7 +13,6 @@ services:
         stdin_open: true
         volumes:
             - ./project:/home/project:rw
-            
             - ./config/data:/docker-entrypoint-initdata.d:rw
             - ./config/dockercron:/var/docker/cron/dockercron:rw
             - ./.dockertmp/log/gcc/:/var/log/docker/gcc/:rw
