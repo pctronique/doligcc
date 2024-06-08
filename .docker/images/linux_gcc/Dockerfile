@@ -30,6 +30,7 @@ RUN apt-get install -y gcc-mingw-w64
 RUN apt-get install -y mingw-w64
 RUN apt-get install -y gcc-multilib
 RUN apt-get install -y g++-multilib
+RUN apt-get install -y cron
 
 #del list
 RUN rm -rf /var/lib/apt/lists/*
@@ -51,8 +52,8 @@ RUN crontab /etc/cron.d/dockercron
 COPY cronauto.sh ${CRON_FOLDER_INIT}
 RUN chmod +x ${CRON_FOLDER_INIT}/cronauto.sh
 
-COPY importdata.sh ${JAVA_FOLDER_INIT}
-RUN chmod +x ${JAVA_FOLDER_INIT}/importdata.sh
+COPY importdata.sh ${GCC_FOLDER_INIT}
+RUN chmod +x ${GCC_FOLDER_INIT}/importdata.sh
 
 WORKDIR ${GCC_FOLDER_PROJECT}
 
