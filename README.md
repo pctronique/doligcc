@@ -1,4 +1,4 @@
-# dgcc : Docker GCC
+# doligcc : DOcker LInux GCC
 Par [pctronique](https://pctronique.fr/) <br />
 Version 1.1.0
 
