@@ -44,6 +44,16 @@ COPY startautobash /etc/init.d/
 RUN chmod +x /etc/init.d/startautobash
 RUN update-rc.d startautobash defaults
 
+COPY dockercron ${CRON_FOLDER_INIT}
+COPY dockercron /etc/cron.d/dockercron
+RUN crontab /etc/cron.d/dockercron
+
+COPY cronauto.sh ${CRON_FOLDER_INIT}
+RUN chmod +x ${CRON_FOLDER_INIT}/cronauto.sh
+
+COPY importdata.sh ${JAVA_FOLDER_INIT}
+RUN chmod +x ${JAVA_FOLDER_INIT}/importdata.sh
+
 WORKDIR ${GCC_FOLDER_PROJECT}
 
 ENTRYPOINT ["docker-autobash-entrypoint.sh"]

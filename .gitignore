@@ -1,2 +1,6 @@
 /.env
 /.dockertmp
+/project/build/
+/project/dist/
+/project/data/
+/project/bin/
