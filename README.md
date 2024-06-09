@@ -10,7 +10,7 @@ Version 1.1.0
         <a href="#Installation">Installation</a>
         <ul>
             <li><a href="#Le-nom-du-projet">Le nom du projet</a></li>
-            <li><a href="#Le-nom-de-l-exécutable">Le nom de l'exécutable</a></li>
+            <li><a href="#le-nom-de-lexécutable">Le nom de l'exécutable</a></li>
             <li><a href="#Le-fichier-env">Le fichier .env</a></li>
             <li><a href="#Création-des-conteneurs">Création des conteneurs</a></li>
             <li><a href="#Où-placer-le-code">Où placer le code</a></li>
