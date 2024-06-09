@@ -10,6 +10,7 @@ Version 1.1.0
         <a href="#Installation">Installation</a>
         <ul>
             <li><a href="#Le-nom-du-projet">Le nom du projet</a></li>
+            <li><a href="#Le-nom-de-l-exécutable">Le nom de l'exécutable</a></li>
             <li><a href="#Le-fichier-env">Le fichier .env</a></li>
             <li><a href="#Création-des-conteneurs">Création des conteneurs</a></li>
             <li><a href="#Où-placer-le-code">Où placer le code</a></li>
@@ -54,6 +55,17 @@ Modifier le nom du projet dans le fichier « .env.example » :
 NAME_PROJECT=doligcc
 ```
 Mettre le nom du projet.
+
+> [!WARNING]
+> Le faire avant de créer le fichier « .env ».
+
+### Le nom de l'exécutable
+
+Modifier le nom de l'exécutable dans le fichier « .env.example » :
+```
+BIN_NAME_EXE=doligcc
+```
+Mettre le nom de l'exécutable.
 
 > [!WARNING]
 > Le faire avant de créer le fichier « .env ».
