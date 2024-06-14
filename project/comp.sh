@@ -8,7 +8,7 @@ cd ${0%/*}
 
 while read line  
 do
-    if [[ "$line" =~ .*"=".* ]]; then
+    if [[ (! $line =~ ^#.*) && ($line =~ .*=.*) ]]; then
         export "$line"
     fi
 done < ${0%/*}/.env
